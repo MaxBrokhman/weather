@@ -82,3 +82,5 @@ app.get('*', getRenderPage('404', {
   name,
   errorMessage: 'Page not found.',
 }))
+
+app.listen(port)
