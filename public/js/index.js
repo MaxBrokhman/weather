@@ -19,11 +19,14 @@ weatherForm.addEventListener('submit', async (evt) => {
 
   try {
     const response = await fetch(`/weather?address=${searchedLocation}`)
-    const { forecast, error } = await response.json()
+    const { 
+      forecast, 
+      location, 
+      error 
+    } = await response.json()
     if (error) return loadingParagraph.textContent = error
 
-    const { 
-      location, 
+    const {  
       summary,  
       temperature,
       chanceOfRain,
