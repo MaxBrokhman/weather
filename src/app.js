@@ -16,8 +16,6 @@ const {
   name,
 } = config
 
-// https://brokhman-demo-weather-app.herokuapp.com/ | https://git.heroku.com/brokhman-demo-weather-app.git
-
 const app = express()
 const port = process.env.PORT || 3000
 
